@@ -1,0 +1,16 @@
+ La maintenabilité d'un logiciel inclut tout ce qui lui permet d'être facilement modifié. Un grand nombre de métriques logicielles existent afin de tenter de quantifier les éléments qui fondent cette maintenabilité. Dans ce projet, nous nous intéresserons aux métriques liées à la stabilité d'une architecture orientée-objet.
+
+Il s'agira d'implémenter en Java un analyseur de code Java capable de déterminer la quantité de "couplage" entre les composants, la quantité de "cohesion" au sein des composants, et surtout les métriques associées à l'analyse des dépendances entre paquetages, en particulier celles associées à la "stabilité" comme celle basée sur les "couplages afférents et efférents" de R. Martin. Dans une deuxième phase, on pourra alors considérer ces métriques pour présenter de manière graphique les diagrammes de classes et de paquetages d'un logiciel, avec des indications associées aux problèmes détectés au moyen de ces métriques. 
+
+Besoins fonctionnels : 
+-Analyser du code java 
+    -Lire un ensemble de fichiers Java
+    -Parser ce code (à l'aide d'outils externes)
+    -Savoir en extraire le graphe de dépendances
+        -L'afficher à l'utilisateur soit sous forme textuelle, soit sous forme graphique
+    -Déduire de ce code s'il peut être considéré comme "de qualité" en se fiant à certaines métriques
+        -Déduire si le code est robuste
+        -Déduire si le code est maintenable
+        -Savoir quelles parties du code sont mauvaise
+-Géréner un diagramme de classes
+-Indiquer à l'utilisateur quelle partie de son projet est problèmatique (en fonction des métriques proposées)
